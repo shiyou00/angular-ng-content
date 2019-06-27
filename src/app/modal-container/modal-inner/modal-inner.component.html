@@ -1,0 +1,19 @@
+<div class="modal-inner">
+    <div class="modal-content">
+        <div class="modal-close">
+            <div class="modal-close-x">X</div>
+        </div>
+        <div class="modal-header">
+            <div class="modal-title">
+                <ng-content select="app-modal-title"></ng-content>
+            </div>
+        </div>
+        <div class="modal-body">
+            <ng-content select="app-modal-content"></ng-content>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default">取消</button>
+            <button class="btn btn-primary">确定</button>
+        </div>
+    </div>
+</div>

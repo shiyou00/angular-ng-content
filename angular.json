@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "rxjs-demo": {
+    "ng-content-demo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/rxjs-demo",
+            "outputPath": "dist/ng-content-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "rxjs-demo:build"
+            "browserTarget": "ng-content-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "rxjs-demo:build:production"
+              "browserTarget": "ng-content-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "rxjs-demo:build"
+            "browserTarget": "ng-content-demo:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "rxjs-demo-e2e": {
+    "ng-content-demo-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "rxjs-demo:serve"
+            "devServerTarget": "ng-content-demo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "rxjs-demo:serve:production"
+              "devServerTarget": "ng-content-demo:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "rxjs-demo"
+  "defaultProject": "ng-content-demo"
 }
