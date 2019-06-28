@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modal-title.component.css']
 })
 export class ModalTitleComponent implements OnInit {
-
+  title = '传入标题组件';
   constructor() { }
 
   ngOnInit() {
