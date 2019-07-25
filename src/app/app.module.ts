@@ -9,6 +9,7 @@ import { ModalContentComponent } from './modal-container/modal-content/modal-con
 import { ModalTitleComponent } from './modal-container/modal-title/modal-title.component';
 import { OperationDomComponent } from './operation-dom/operation-dom.component';
 import { ChildDomComponent } from './operation-dom/child-dom/child-dom.component';
+import { InsertModalComponent } from './insert-modal/insert-modal.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ChildDomComponent } from './operation-dom/child-dom/child-dom.component
     ModalContentComponent,
     ModalTitleComponent,
     OperationDomComponent,
-    ChildDomComponent
+    ChildDomComponent,
+    InsertModalComponent
   ],
   imports: [
     BrowserModule,

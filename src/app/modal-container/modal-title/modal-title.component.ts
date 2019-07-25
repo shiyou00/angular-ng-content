@@ -10,6 +10,11 @@ export class ModalTitleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    let i = 0;
+    setInterval(() => {
+      i++;
+      this.title = `传入标题组件${i}`;
+    }, 1000 );
   }
 
 }

@@ -40,12 +40,12 @@ export class OperationDomComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    const view = this.tpl.createEmbeddedView(null);
-    document.getElementById('container').appendChild(this._container.rootNodes[0]);
+    // const view = this.tpl.createEmbeddedView(null);
+    document.body.appendChild(this._container.rootNodes[0]);
     // 实现了组件动态插入功能
     // this.vc.insert(this._container);
     // this.vc.createEmbeddedView(this.tpl);
     // this.addDynamicComponent();
-    console.log('tpl', view);
+    // console.log('tpl', view);
   }
 }
